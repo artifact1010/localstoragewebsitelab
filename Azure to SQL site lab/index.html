@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LocalStorage Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Browser Storage Demo</h1>
+        <p class="subtitle">Data persists in localStorage (client-side only)</p>
+
+        <div class="card">
+            <form id="dataForm">
+                <div class="input-group">
+                    <label for="dataInput">Enter data:</label>
+                    <input type="text" id="dataInput" placeholder="Type any text..." required>
+                </div>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Stored Items</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Content</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="clearAll" class="secondary">Clear All</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
